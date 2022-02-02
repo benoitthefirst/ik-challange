@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import "./styles/sass/style.scss";
+import logo from "./assets/images/logo.svg";
+import "./assets/sass/style.scss";
+import NavBar from "./components/navbar";
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
