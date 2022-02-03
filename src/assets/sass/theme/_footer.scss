@@ -10,3 +10,9 @@
         color: $white-color;
     }
 }
+
+@media (max-width: 464px) {
+    .footer{
+        padding: 0 33px;
+    }
+}
