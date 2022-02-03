@@ -1,6 +1,7 @@
 .nav {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
   background-color: $white-color;
   height: 60px;
   padding: 0 53px;
@@ -24,7 +25,9 @@
         }
         a {
           color: $text-color;
-          font: normal normal 600 20px/24px Montserrat;
+          font-size: 20px;
+          font-weight: 600;
+          font-family: $font-family;
           text-transform: uppercase;
           text-decoration: none;
           display: block;
@@ -43,7 +46,7 @@
           margin: 0 auto;
         }
         .active-hidden {
-            background-color: transparent;
+          background-color: transparent;
         }
       }
     }
@@ -159,23 +162,23 @@
   }
 }
 
-@media (min-width: 768px){
-  .nav-links{
+@media (min-width: 768px) {
+  .nav-links {
     width: 90% !important;
   }
 }
 @media (width: 820px) {
-  .nav-links{
+  .nav-links {
     width: 80% !important;
   }
 }
 @media (width: 912px) {
-  .nav-links{
+  .nav-links {
     width: 75% !important;
   }
 }
 @media (min-width: 992px) {
-  .nav-links{
+  .nav-links {
     width: 40% !important;
   }
 }

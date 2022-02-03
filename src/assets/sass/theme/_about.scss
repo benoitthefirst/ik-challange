@@ -4,7 +4,9 @@
   h2 {
     color: $text-color;
     text-align: center;
-    font: normal normal 600 46px/57px Montserrat;
+    font-size: 46px;
+    font-weight: 600;
+    font-family: $font-family;
   }
   div {
     justify-content: center;
@@ -13,11 +15,15 @@
     h1 {
       color: $text-color;
       text-align: left;
-      font: normal normal bold 20px/24px Montserrat;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: $font-family;
     }
     p {
       text-align: left;
-      font: normal normal normal 18px/33px Montserrat;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: $font-family;
       letter-spacing: 0px;
       color: $text-color2;
       word-wrap: break-word;
@@ -38,7 +44,9 @@
     padding: 24px !important;
     h2 {
       text-align: left;
-      font: normal normal bold 25px Montserrat;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: $font-family;
     }
     div {
       margin-top: 18px;
@@ -46,7 +54,9 @@
         display: none;
       }
       p {
-        font: normal normal normal 16px/29px Montserrat;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: $font-family;
       }
     }
   }
