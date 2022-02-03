@@ -1,0 +1,53 @@
+.about {
+  justify-content: center;
+  padding: 40px 90px 217px 90px;
+  h2 {
+    color: $text-color;
+    text-align: center;
+    font: normal normal 600 46px/57px Montserrat;
+  }
+  div {
+    justify-content: center;
+    align-items: center;
+    gap: 87px;
+    h1 {
+      color: $text-color;
+      text-align: left;
+      font: normal normal bold 20px/24px Montserrat;
+    }
+    p {
+      text-align: left;
+      font: normal normal normal 18px/33px Montserrat;
+      letter-spacing: 0px;
+      color: $text-color2;
+      word-wrap: break-word;
+    }
+    .logo {
+      display: flex;
+      justify-content: start;
+      img {
+        width: 236px;
+        height: 370px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 24px !important;
+    h2 {
+      text-align: left;
+      font: normal normal bold 25px Montserrat;
+    }
+    div {
+      margin-top: 18px;
+      .logo {
+        display: none;
+      }
+      p {
+        font: normal normal normal 16px/29px Montserrat;
+      }
+    }
+  }
+}
