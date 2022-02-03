@@ -9,7 +9,6 @@
   .nav-links {
     position: relative;
     margin: 0 auto;
-    width: 40%;
     ul {
       margin: 0;
       padding: 5px 0 0;
@@ -157,5 +156,26 @@
       height: 31px !important;
       width: 31px !important;
     }
+  }
+}
+
+@media (min-width: 768px){
+  .nav-links{
+    width: 90% !important;
+  }
+}
+@media (width: 820px) {
+  .nav-links{
+    width: 80% !important;
+  }
+}
+@media (width: 912px) {
+  .nav-links{
+    width: 75% !important;
+  }
+}
+@media (min-width: 992px) {
+  .nav-links{
+    width: 40% !important;
   }
 }

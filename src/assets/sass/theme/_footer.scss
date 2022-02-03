@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 80px;
+    background-color: $primary-color2;
+    p{
+        margin-left: 10px;
+        font: normal normal bold 14px/19px Montserrat;
+        color: $white-color;
+    }
+}

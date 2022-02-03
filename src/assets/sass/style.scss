@@ -9,6 +9,9 @@ body {
 
 //including variables
 @import "theme/variables";
+@import "theme/responsive";
 
 //custom Scss
 @import "theme/header";
+@import "theme/hero";
+@import "theme/footer";
