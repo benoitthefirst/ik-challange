@@ -1,12 +1,31 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import logo from "../assets/images/logo.svg";
-import menuIcon from "../assets/images/menu.svg";
+import { isMobile } from "react-device-detect";
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // useEffect(() => {
+    
+  // }, [isOpen]);
+
+  const OpenMenu = () => {
+    setIsOpen(true);
+  }
+  const CloseMenu = () => {
+    if (isMobile) 
+      setIsOpen(false);
+  }
+
+  const NavigateTo = (name) => {
+    if (isMobile) 
+      CloseMenu();
+    //To-do: add navigation
+  }
   return (
     <div className="nav">
       <input type="checkbox" id="nav-check" />
-      <div className="nav-btn">
+      <div className="nav-btn" onClick={isOpen ? CloseMenu : OpenMenu}>
         <label htmlFor="nav-check">
           <span></span>
           <span></span>
@@ -18,22 +37,31 @@ export default function NavBar() {
           <img src={logo} alt="" />
         </a>
       </div>
-      <div className="nav-links">
+      {console.log(isOpen)}
+      <div className={"nav-links " + (!isOpen ? "close" : "open")}>
         <ul id="menu">
           <li>
-            <a href="#">Home</a>
+            <a href="#" onClick={CloseMenu}>
+              Home
+            </a>
             <div className="active" />
           </li>
           <li>
-            <a href="#">Products</a>
+            <a href="#" onClick={CloseMenu}>
+              Products
+            </a>
             <div className="active active-hidden" />
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#" onClick={CloseMenu}>
+              Blog
+            </a>
             <div className="active active-hidden" />
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#" onClick={CloseMenu}>
+              Contact
+            </a>
             <div className="active active-hidden" />
           </li>
         </ul>
