@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-You can see the demo app here [Check Demo](https://ik-challange.herokuapp.com/).
+You can see the demo app here [Check Demo](https://ik-challenge.herokuapp.com/).
 
 ## Available Scripts
 
