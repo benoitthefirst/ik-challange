@@ -125,13 +125,6 @@
     .close{
       height: 0px;
     }
-    // #nav-check:not(:checked) ~ .nav-links {
-    //   height: 0px;
-    // }
-    // #nav-check:checked ~ .nav-links {
-    //   height: calc(100vh - 150px);
-    //   overflow-y: hidden;
-    // }
   }
   .nav-btn {
     width: 17px;
@@ -139,6 +132,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .close-text{
+      color: $text-color;
+      font-family: $font-family;
+      font-size: 40px;
+      font-weight: normal;
+    }
     label {
       display: inline-block;
       width: 50px;

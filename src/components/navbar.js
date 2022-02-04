@@ -24,13 +24,16 @@ export default function NavBar() {
   }
   return (
     <div className="nav">
-      <input type="checkbox" id="nav-check" />
       <div className="nav-btn" onClick={isOpen ? CloseMenu : OpenMenu}>
-        <label htmlFor="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+        {isOpen ? (
+          <span className="close-text">x</span>
+        ) : (
+          <label>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        )}
       </div>
       <div className="logo_area">
         <a href="">
